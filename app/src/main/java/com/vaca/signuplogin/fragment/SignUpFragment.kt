@@ -19,21 +19,22 @@ import androidx.core.content.ContextCompat
 import androidx.core.widget.doAfterTextChanged
 import androidx.fragment.app.Fragment
 import com.vaca.signuplogin.R
-import com.vaca.signuplogin.databinding.FragmentLoginBinding
+
+import com.vaca.signuplogin.databinding.FragmentSignupBinding
 
 import java.util.*
 
 
-class LoginFragment : Fragment() {
+class SignUpFragment : Fragment() {
 
 
-    lateinit var binding: FragmentLoginBinding
+    lateinit var binding: FragmentSignupBinding
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding= FragmentLoginBinding.inflate(inflater,container,false)
+        binding= FragmentSignupBinding.inflate(inflater,container,false)
 
         setDrawable()
         return binding.root
