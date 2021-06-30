@@ -6,9 +6,39 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:text="qqqqqqqqfuck"
+    <EditText
+        android:id="@+id/x1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="60dp"
+        android:layout_marginTop="210dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/login_coutour"
+        android:digits="1234567890"
+        android:hint="请输入您的账号"
+        android:inputType="number"
+        android:textColor="@color/login_black"
+        android:textColorHint="@color/login_hint_black"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/x2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/login_coutour"
+        android:enabled="false"
+        android:hint="请输入密码"
+        android:inputType="number"
+        android:textColor="@color/login_black"
+        android:textColorHint="@color/login_hint_black"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="@+id/x1"
+        app:layout_constraintTop_toBottomOf="@+id/x1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

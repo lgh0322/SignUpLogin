@@ -18,6 +18,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.widget.doAfterTextChanged
 import androidx.fragment.app.Fragment
+import com.vaca.signuplogin.R
 import com.vaca.signuplogin.databinding.FragmentLoginBinding
 
 import java.util.*
@@ -34,8 +35,25 @@ class LoginFragment : Fragment() {
     ): View {
         binding= FragmentLoginBinding.inflate(inflater,container,false)
 
+        setDrawable()
         return binding.root
     }
 
 
+
+
+
+
+
+
+
+    private fun setDrawable() {
+        val drawable = ContextCompat.getDrawable(requireContext(), R.drawable.login_a1)
+        drawable?.setBounds(5, 0, 100, 100)
+        binding.x1.setCompoundDrawables(drawable, null, null, null)
+
+        val drawable2 = ContextCompat.getDrawable(requireContext(), R.drawable.login_a2)
+        drawable2?.setBounds(5, 0, 100, 100)
+        binding.x2.setCompoundDrawables(drawable2, null, null, null)
+    }
 }
