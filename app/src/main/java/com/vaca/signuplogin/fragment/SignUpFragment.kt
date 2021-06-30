@@ -21,6 +21,7 @@ import androidx.fragment.app.Fragment
 import com.vaca.signuplogin.R
 
 import com.vaca.signuplogin.databinding.FragmentSignupBinding
+import com.vaca.signuplogin.server.BigBoy
 
 import java.util.*
 
@@ -35,7 +36,9 @@ class SignUpFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding= FragmentSignupBinding.inflate(inflater,container,false)
-
+        binding.login.setOnClickListener {
+            BigBoy.mSocket.emit("signup",binding.x1.text.toString(),binding.x2.text.toString())
+        }
         setDrawable()
         return binding.root
     }

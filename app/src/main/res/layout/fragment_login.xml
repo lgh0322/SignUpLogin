@@ -40,6 +40,7 @@
         app:layout_constraintTop_toBottomOf="@+id/x1" />
 
     <TextView
+        android:id="@+id/signup"
         android:textSize="16sp"
         android:textColor="#ff15b9bf"
         android:gravity="center"

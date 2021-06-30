@@ -20,5 +20,9 @@
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.vaca.signuplogin.fragment.LoginFragment"
-        android:label="LoginFragment" />
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_signup_fragment"
+            app:destination="@id/signup_fragment" />
+    </fragment>
 </navigation>

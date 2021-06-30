@@ -18,6 +18,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.widget.doAfterTextChanged
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.vaca.signuplogin.R
 import com.vaca.signuplogin.databinding.FragmentLoginBinding
 
@@ -41,6 +42,10 @@ class LoginFragment : Fragment() {
 
         binding.login.setOnClickListener {
             mSocket.emit("login",binding.x1.text.toString(),binding.x2.text.toString())
+        }
+
+        binding.signup.setOnClickListener {
+            findNavController().navigate(R.id.action_loginFragment_to_signup_fragment)
         }
 
 
