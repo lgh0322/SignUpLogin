@@ -3,8 +3,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/login_navigation"
-    app:startDestination="@+id/main">
+    app:startDestination="@+id/main_fragment">
 
 
-    <fragment android:id="@+id/placeholder" />
+    <fragment
+        android:id="@+id/main_fragment"
+        android:name="com.vaca.signuplogin.fragment.EnterFragment">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/login_fragment"
+        android:name="com.vaca.signuplogin.fragment.LoginFragment">
+
+    </fragment>
 </navigation>

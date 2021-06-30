@@ -13,11 +13,12 @@ import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.core.widget.doAfterTextChanged
 import androidx.fragment.app.Fragment
+import com.vaca.signuplogin.databinding.FragmentEnterBinding
 
 
 class EnterFragment : Fragment() {
 
-    lateinit var bind: FeedbackFragmentBinding
+    lateinit var bind: FragmentEnterBinding
 
 
     override fun onCreateView(
@@ -25,14 +26,11 @@ class EnterFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        bind = FeedbackFragmentBinding.inflate(inflater, container, false)
+        bind = FragmentEnterBinding.inflate(inflater, container, false)
 
 
         return bind.root
     }
 
-    override fun onStart() {
-        super.onStart()
-    }
 
 }

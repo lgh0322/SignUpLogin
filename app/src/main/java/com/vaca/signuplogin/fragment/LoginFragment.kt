@@ -18,20 +18,23 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.widget.doAfterTextChanged
 import androidx.fragment.app.Fragment
+import com.vaca.signuplogin.databinding.FragmentLoginBinding
 
 import java.util.*
 
 
 class LoginFragment : Fragment() {
 
+
+    lateinit var binding: FragmentLoginBinding
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
+        binding= FragmentLoginBinding.inflate(inflater,container,false)
 
-
-        return root
+        return binding.root
     }
 
 
