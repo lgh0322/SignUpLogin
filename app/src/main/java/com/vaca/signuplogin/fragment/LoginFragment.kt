@@ -22,6 +22,7 @@ import com.vaca.signuplogin.R
 import com.vaca.signuplogin.databinding.FragmentLoginBinding
 
 import com.vaca.signuplogin.databinding.FragmentSignupBinding
+import com.vaca.signuplogin.server.BigBoy.mSocket
 
 import java.util.*
 
@@ -36,6 +37,13 @@ class LoginFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding= FragmentLoginBinding.inflate(inflater,container,false)
+
+
+        binding.login.setOnClickListener {
+            mSocket.emit("login",binding.x1.text.toString(),binding.x2.text.toString())
+        }
+
+
 
         setDrawable()
         return binding.root
