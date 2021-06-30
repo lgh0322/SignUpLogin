@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_navigation"
-    app:startDestination="@+id/signup_fragment">
+    app:startDestination="@+id/loginFragment">
 
 
     <fragment
@@ -17,4 +17,8 @@
         android:name="com.vaca.signuplogin.fragment.SignUpFragment">
 
     </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.vaca.signuplogin.fragment.LoginFragment"
+        android:label="LoginFragment" />
 </navigation>
